@@ -1,19 +1,18 @@
 package parcial.evento;
 
-import org.w3c.dom.Notation;
 
 public class Inscripcion {
 
     private Curso cursos;
     private Estudiantes estudiante;
-    protected int Nota;
+    protected double Nota;
     protected int ID;
     protected boolean Situacion;
 
     public Inscripcion() {
     }
 
-    public Inscripcion(Curso cursos, Estudiantes estudiante, int Nota, int ID, boolean Situacion) {
+    public Inscripcion(Curso cursos, Estudiantes estudiante, double Nota, int ID, boolean Situacion) {
         this.cursos = cursos;
         this.estudiante = estudiante;
         this.Nota = Nota;
@@ -37,11 +36,11 @@ public class Inscripcion {
         this.estudiante = estudiante;
     }
 
-    public int getNota() {
+    public double getNota() {
         return Nota;
     }
 
-    public void setNota(int Nota) {
+    public void setNota(double Nota) {
         this.Nota = Nota;
     }
 
@@ -60,6 +59,8 @@ public class Inscripcion {
     public void setSituacion(boolean Situacion) {
         this.Situacion = Situacion;
     }
+
+    
 
     public void Situacion(){
     if ( Nota
